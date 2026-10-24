@@ -1,0 +1,8 @@
+{
+  "name": "SahaaySetu",
+  "description": "The AI Crisis-to-Action Bridge — transforming unstructured emergency reports into verified, structured, life-saving action.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

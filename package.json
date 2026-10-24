@@ -1,0 +1,30 @@
+{
+  "name": "sahaaysetu-ai-crisis-bridge",
+  "version": "1.0.0",
+  "description": "SahaaySetu — The AI Crisis-to-Action Bridge for PromptWars Societal Benefit",
+  "private": true,
+  "workspaces": [
+    "shared",
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "npm --workspace=server run dev",
+    "dev:server": "npm --workspace=server run dev",
+    "dev:client": "npm --workspace=client run dev",
+    "build": "npm --workspace=shared run build && npm --workspace=client run build && npm --workspace=server run build",
+    "build:shared": "npm --workspace=shared run build",
+    "build:client": "npm --workspace=client run build",
+    "build:server": "npm --workspace=server run build",
+    "test": "npm --workspace=server run test && npm --workspace=client run test",
+    "lint": "npm --workspace=server run lint && npm --workspace=client run lint",
+    "typecheck": "npm --workspace=shared run typecheck && npm --workspace=server run typecheck && npm --workspace=client run typecheck",
+    "start": "npm --workspace=server run start"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
